@@ -1,0 +1,8 @@
+com\jdasilva\socialweb\commons\App.class
+com\jdasilva\socialweb\commons\models\document\Producto.class
+com\jdasilva\socialweb\commons\errors\UsuarioNoEncontrado.class
+com\jdasilva\socialweb\commons\models\document\Categoria.class
+com\jdasilva\socialweb\commons\models\entity\Role.class
+com\jdasilva\socialweb\commons\models\entity\Usuario.class
+com\jdasilva\socialweb\commons\models\entity\Mensaje.class
+com\jdasilva\socialweb\commons\models\entity\Contacto.class
