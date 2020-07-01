@@ -1,6 +1,8 @@
 package com.jdasilva.socialweb.commons.errors;
 
-public class UsuarioNoEncontrado extends RuntimeException {
+import java.io.Serializable;
+
+public class UsuarioNoEncontrado extends RuntimeException  implements Serializable{
 
 	/**
 	 * 
