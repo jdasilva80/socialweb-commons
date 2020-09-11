@@ -1,4 +1,4 @@
-package com.jdasilva.socialweb.commons.models.entity;
+package com.jdasilva.socialweb.commons.models.usuarios.entity;
 
 import java.io.Serializable;
 

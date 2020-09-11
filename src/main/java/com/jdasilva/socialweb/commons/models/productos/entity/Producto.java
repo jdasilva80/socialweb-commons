@@ -1,23 +1,28 @@
-package com.jdasilva.socialweb.commons.models.document;
+package com.jdasilva.socialweb.commons.models.productos.entity;
 
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
-@Document(collection = "productos")
+@Entity
+@Table(name = "productos")
 public class Producto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private String id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
 	@NotEmpty
 	private String nombre;
@@ -59,11 +64,11 @@ public class Producto implements Serializable {
 		this.foto = foto;
 	}	
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
